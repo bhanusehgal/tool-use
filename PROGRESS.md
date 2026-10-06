@@ -113,3 +113,9 @@ Tracks the build of the hand-made tool-using agent. See [PLAN.md](PLAN.md) for t
 - Added `docs/make_charts.py` (`requirements-docs.txt`: matplotlib): generates 5 charts as light **and** dark SVGs in `docs/images/`, chosen automatically on GitHub via `<picture>`. Colours come from the dataviz skill's validated colourblind-safe palette (first 3 slots only); Node wasn't available to re-run its validator. Each chart was previewed and fixed (rounded-bar geometry bug, a seam, a colour reused across panels).
 - README: the ASCII loop was replaced with a "project at a glance" section (two Mermaid diagrams, the ablation chart, a results table) linking to the Visual Guide.
 - Mermaid syntax was checked by script (quotes, brackets, no semicolons in the sequence diagram) but not rendered locally (no Node/mermaid-cli). Check it once in GitHub's preview after pushing.
+
+### Git (2026-10-05)
+- Pre-publish scan: no API keys, tokens or emails in the project. Removed the one personal path (Windows username) from `PLAN.md`.
+- README setup now covers the Ollama model downloads (`qwen2.5:7b-instruct`, `nomic-embed-text`), the optional requirements files, and macOS/Linux commands.
+- `.gitignore`: venv, caches, the rebuilt database and embeddings cache, `.env`, editor files. `.gitattributes` normalises line endings to LF.
+- Initialised the repo on branch `main`; initial commit `0c33996` (96 files, 68 tests passing). Not pushed: no remote yet.
