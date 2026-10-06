@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Rebuilt locally: `py data/seed_db.py`, and the embeddings cache on first semantic search
+data/company.db
+data/index.json
+
+# Secrets and editor files
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
